@@ -39,7 +39,7 @@ Embark on a transformative journey as you turn ordinary routines into meaningful
 Embrace the journey of intentional living, where each tracked habit becomes a catalyst for personal growth. Join the rekindle community and share your progress with the world using #RekindleYourHabits. Inspire others to embark on their own path of positive transformation and make a difference together.
 
 ## Contribution
-We welcome contributions from the community! If you have ideas, bug reports, or code improvements, feel free to open an issue or submit a pull request. Together, we can make reKindleeven better.
+We welcome contributions from the community! If you have ideas, bug reports, or code improvements, feel free to open an issue or submit a pull request. Together, we can make reKindle even better.
 
 ## Download Now
 Reclaim your time, establish positive habits, and embrace a healthier digital lifestyle with reKindle. Download now and embark on a 30-day journey toward digital well-being. Your path to balance begins here.
