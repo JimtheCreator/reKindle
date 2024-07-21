@@ -42,7 +42,7 @@ Embrace the journey of intentional living, where each tracked habit becomes a ca
 We welcome contributions from the community! If you have ideas, bug reports, or code improvements, feel free to open an issue or submit a pull request. Together, we can make reKindle even better.
 
 ## Download Now
-app/release/rekindle.apk
+[app/release/rekindle.apk](https://github.com/JimtheCreator/reKindle/tree/master/app/release)
 ---
 
 Thank you for choosing reKindle. We are excited to support you on your journey to digital wellness. If you have any questions or feedback, feel free to reach out to us. Happy rekindling!
