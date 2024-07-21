@@ -304,17 +304,17 @@ public class BroadcastBootLoader extends BroadcastReceiver {
 
 
 
-    static void callAPI(JSONObject jsonObject){
+    static void callAPI(JSONObject jsonObject, Context context){
         MediaType JSON = MediaType.get("application/json");
         OkHttpClient client = new OkHttpClient();
 
         String url = "https://fcm.googleapis.com/fcm/send";
-
+        String FCM_API = context.getResources().getString(R.string.FCM_API);
         RequestBody requestBody = RequestBody.create(jsonObject.toString(), JSON);
         Request request = new Request.Builder()
                 .url(url)
                 .post(requestBody)
-                .header("Authorization", "Bearer AAAAZ1mMx5U:APA91bHg8sDA6v96PgMzhX1KTx2jEASnq6AaC28859wvyo82LiAeaK7FHb2jj1y0DMVecEwXT8AtXyA_jHgf-VTSgSeIdQxZOopnyimX5PDjpxEWi7s5_fk8lCcoBwQY1YjePcQ-rVc8")
+                .header("Authorization", FCM_API)
                 .build();
 
         Log.d("Trig", "Called 2");
