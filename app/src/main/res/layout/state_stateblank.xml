@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:background="@color/invicibleColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainsetup2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/mainsetup"
+            android:layout_centerInParent="true"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_margin="4.5dp">
+
+
+            <ImageView
+                android:id="@+id/imageofitem"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/water_droplet" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/mainsetup2"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/howmany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/helvetica_neue_bold"
+            android:text="1/30"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

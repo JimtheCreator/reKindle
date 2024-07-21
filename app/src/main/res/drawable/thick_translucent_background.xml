@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/thick_translucent_background.xml -->
+<!-- res/drawable/slightly_visible_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#000000" /> <!-- Adjust the alpha value to control transparency -->
+            <corners android:radius="16dp" /> <!-- Adjust corner radius as needed -->
+        </shape>
+    </item>
+</layer-list>
+

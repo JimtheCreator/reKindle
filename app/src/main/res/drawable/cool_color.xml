@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/thickGrey"/> <!-- The color code consists of: #AARRGGBB (AA - Alpha, RR - Red, GG - Green, BB - Blue) -->
+
+
+    <corners android:radius="20dp"/>   <!-- Adjust the corner radius as needed -->
+</shape>
+

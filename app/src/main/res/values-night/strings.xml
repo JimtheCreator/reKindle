@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="do_not_optimize_this_helps_keep_the_app_running_in_the_background">Do not optimize. This helps keep the app running in the background</string>
+    <string name="this_helps_the_app_to_prompt_you_when_you_ve_opened_a_blocked_app">This helps the app to prompt you when you\'ve opened a blocked app</string>
+    <string name="helps_analyse_your_usage_of_apps_on_your_phone">Helps analyse your usage of apps on your phone</string>
+    <string name="usage_access">Usage Access</string>
+    <string name="permit_accessibility">Permit Accessibility</string>
+    <string name="allow_permission_to_accessibility_settings_this_will_help_the_app_track_what_app_you_re_using_to_prevent_you_from_opening_the_blocked_ones">Allow permission to Accessibility settings. This will help the app track what app you\'re using to prevent you from opening the blocked ones.</string>
+    <string name="allow_the_following">Allow the following :</string>
+    <string name="current_level">Current level</string>
+
+</resources>

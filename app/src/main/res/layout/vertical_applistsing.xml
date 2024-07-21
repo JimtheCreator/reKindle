@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1D1D1D">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:contentDescription="@string/app_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/appName"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sanfrans_regular"
+                android:layout_width="wrap_content"
+                android:text="Instagram"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/check"
+            android:src="@drawable/baseline_radio_button_unchecked_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            />
+
+
+<!--        <ImageView-->
+<!--            android:src="@drawable/baseline_check_circle_24"-->
+<!--            app:tint="@color/lightGreen"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            />-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/noError"
+        android:text="HOME"
+        android:layout_marginStart="10dp"
+        android:textSize="11sp"
+        android:textColor="#1D1D1D"
+        android:fontFamily="@font/sanfrans_regular"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

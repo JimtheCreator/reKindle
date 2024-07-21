@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/invicibleColor"
+    android:layout_height="wrap_content">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_gravity="center"
+        android:id="@+id/profile"
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        app:civ_border="true"
+        app:civ_border_color="@color/darkTheme"
+        android:layout_height="80dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:fontFamily="@font/light"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BudyBudy"
+        />
+
+</LinearLayout>

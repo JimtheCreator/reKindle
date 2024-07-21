@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="front_page.SpareTimeActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:overScrollMode="never">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/spare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_gradient">
+
+                    <LinearLayout
+                        android:id="@+id/photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/madesimple"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sanfrans_bold"
+                                android:text="Spare Time"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sanfrans_regular"
+                                android:text="Unlock more Spare Time! Utilize this feature to reduce app usage."
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/closedrawer"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/grey_circle">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_close_24"
+                            app:tint="@color/lightlightBlack" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/madesimple"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linearholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COLLECTION"
+                        android:fontFamily="@font/sanfrans_bold"
+                        android:textColor="@color/thickGrey"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/collectionlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/clicked_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/forspare_background">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/baseline_add_circle_24"
+                            app:tint="@color/white" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/sanfrans__another_medium"
+                            android:text="New collection"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/collection_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_rounded_only"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="0dp"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+            <RelativeLayout
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nnest"
+                android:layout_above="@+id/done_setup"
+                android:fitsSystemWindows="true"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginEnd="15dp"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/sanfrans_bold"
+                            android:text="Set-up"
+                            android:textColor="@color/white"
+                            android:textSize="27sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/shut"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/grey_circle">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/baseline_close_24"
+                                app:tint="@color/lightlightBlack" />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/collectionname"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="text"
+                        android:maxLength="19"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:imeOptions="actionDone"
+                        android:background="@drawable/custom_two"
+                        android:hint="Name eg., Social media"
+                        android:padding="10dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:textSize="14sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_two"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/sanfrans_bold"
+                            android:text="Time"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <NumberPicker
+                                android:id="@+id/hours_picker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/Picker" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/sanfrans_bold"
+                                android:text="hours"
+                                android:textColor="@color/white" />
+
+                            <NumberPicker
+                                android:id="@+id/minutes_picker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:theme="@style/Picker" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/sanfrans_bold"
+                                android:text="mins"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginStart="15dp"-->
+                    <!--                    android:layout_marginTop="20dp"-->
+                    <!--                    android:layout_marginEnd="15dp"-->
+                    <!--                    android:background="@drawable/custom_two"-->
+                    <!--                    android:orientation="vertical"-->
+                    <!--                    android:padding="5dp">-->
+
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_margin="10dp"-->
+                    <!--                        android:fontFamily="@font/sanfrans_bold"-->
+                    <!--                        android:text="Level"-->
+                    <!--                        android:textColor="@color/white"-->
+                    <!--                        android:textSize="16sp" />-->
+
+
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_gravity="start"-->
+                    <!--                        android:layout_margin="10dp"-->
+                    <!--                        android:orientation="horizontal">-->
+
+                    <!--                        <RelativeLayout-->
+                    <!--                            android:id="@+id/lethal"-->
+                    <!--                            android:background="@drawable/fade_white"-->
+                    <!--                            android:layout_width="90dp"-->
+                    <!--                            android:layout_height="25dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:textColor="@color/offwhite"-->
+                    <!--                                android:text="Lethal"-->
+                    <!--                                android:textSize="14sp"-->
+                    <!--                                android:layout_centerInParent="true"-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"/>-->
+
+
+
+                    <!--                        </RelativeLayout>-->
+
+
+                    <!--                        <RelativeLayout-->
+                    <!--                            android:id="@+id/easy"-->
+                    <!--                            android:layout_marginStart="10dp"-->
+                    <!--                            android:background="@drawable/fade_white"-->
+                    <!--                            android:layout_width="90dp"-->
+                    <!--                            android:layout_height="25dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:textColor="@color/offwhite"-->
+                    <!--                                android:text="Easy"-->
+                    <!--                                android:textSize="14sp"-->
+                    <!--                                android:layout_centerInParent="true"-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"/>-->
+
+
+
+                    <!--                        </RelativeLayout>-->
+
+                    <!--                    </LinearLayout>-->
+
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_margin="10dp"-->
+                    <!--                        android:layout_marginStart="10dp"-->
+                    <!--                        android:text="@string/notify"-->
+                    <!--                        android:textColor="@color/thickGrey"-->
+                    <!--                        />-->
+
+                    <!--                </LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:id="@+id/drawerofapps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_two"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/minimize"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sanfrans_bold"
+                                android:text="Apps"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+
+                            <ImageView
+                                android:id="@+id/arrowup"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/baseline_keyboard_arrow_up_24" />
+
+                            <ImageView
+                                android:id="@+id/arrowdown"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/selectappslist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:overScrollMode="never" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/done_setup"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/green_background">
+
+                <TextView
+                    android:id="@+id/donetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sanfrans_bold"
+                    android:text="DONE"
+                    android:textColor="@color/black" />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/progresscircle"
+                    android:layout_centerInParent="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

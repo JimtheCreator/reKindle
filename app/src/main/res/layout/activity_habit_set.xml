@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="devydev.mirror.net.HabitSetActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:text="Almost done"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/regular"
+        android:text="Pick 3 things you'd want to work on this 30days"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/pickedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/helvetica_neue_bold"
+            android:text="SELECTED HABITS"
+            android:textColor="@color/thickGrey"
+            android:textSize="13sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/itemHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/wert"
+                android:fitsSystemWindows="true"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:id="@+id/wert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/thickGrey" />
+
+
+                <TextView
+                    android:id="@+id/done_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/helvetica_neue_bold"
+                    android:text="DONE"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:fitsSystemWindows="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:text="RECOMMENDED"
+                android:textColor="@color/thickGrey"
+                android:textSize="13sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/drawable_shape"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/tap1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dark_grey_circle">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_study_research"/>
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_neue_bold"
+                                android:text="Reading books"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+
+                            <!--                <TextView-->
+                            <!--                    android:layout_width="wrap_content"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:layout_marginTop="5dp"-->
+                            <!--                    android:fontFamily="@font/regular"-->
+                            <!--                    android:text="Get attached to reading books"-->
+                            <!--                    android:textColor="@color/white"-->
+                            <!--                    android:textSize="16sp" />-->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/tap2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dark_grey_circle">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/tried_png"
+                                app:tint="@color/newlyaddedcolor2" />
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_neue_bold"
+                                android:text="Working out"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+
+                            <!--                <TextView-->
+                            <!--                    android:layout_width="wrap_content"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:layout_marginTop="5dp"-->
+                            <!--                    android:fontFamily="@font/regular"-->
+                            <!--                    android:text="Get attached to reading books"-->
+                            <!--                    android:textColor="@color/white"-->
+                            <!--                    android:textSize="16sp" />-->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center" />
+
+                </RelativeLayout>
+
+
+               <!--ALARM SETUP-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/tap3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="50dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:background="@drawable/dark_grey_circle">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="30dp"-->
+<!--                                    android:layout_height="30dp"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:src="@drawable/ic_alarm" />-->
+
+
+<!--                            </RelativeLayout>-->
+
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center_vertical"-->
+<!--                                android:layout_marginStart="15dp"-->
+<!--                                android:layout_marginEnd="15dp"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/helvetica_neue_bold"-->
+<!--                                    android:text="Waking-up time"-->
+<!--                                    android:textColor="@color/white"-->
+<!--                                    android:textSize="14sp" />-->
+
+
+<!--                                &lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--                                &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                                &lt;!&ndash;                    android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--                                &lt;!&ndash;                    android:fontFamily="@font/regular"&ndash;&gt;-->
+<!--                                &lt;!&ndash;                    android:text="Get attached to reading books"&ndash;&gt;-->
+<!--                                &lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--                                &lt;!&ndash;                    android:textSize="16sp" />&ndash;&gt;-->
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </LinearLayout>-->
+
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/radio3"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:gravity="center" />-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/time_layout"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:visibility="gone">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:id="@+id/set_time"-->
+<!--                            android:layout_width="120dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:layout_marginTop="30dp"-->
+<!--                            android:background="@drawable/diff_color">-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/actualtime"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:fontFamily="@font/regular"-->
+<!--                                android:text="Set time"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="15sp" />-->
+
+<!--                        </RelativeLayout>-->
+
+<!--                    </RelativeLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/tap6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dark_grey_circle">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_martial_arts"
+                                app:tint="@color/newlyaddedcolor1" />
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_neue_bold"
+                                android:text="Work on Martial arts"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+
+                            <!--                <TextView-->
+                            <!--                    android:layout_width="wrap_content"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:layout_marginTop="5dp"-->
+                            <!--                    android:fontFamily="@font/regular"-->
+                            <!--                    android:text="Get attached to reading books"-->
+                            <!--                    android:textColor="@color/white"-->
+                            <!--                    android:textSize="16sp" />-->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RadioButton
+                        android:id="@+id/radio6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:text="OTHERS"
+                android:textColor="@color/thickGrey"
+                android:textSize="13sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/drawable_shape"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/tap4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dark_grey_circle">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_workout"
+                                app:tint ="@color/newColor"/>
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_neue_bold"
+                                android:text="Going for a run"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+
+                            <!--                <TextView-->
+                            <!--                    android:layout_width="wrap_content"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:layout_marginTop="5dp"-->
+                            <!--                    android:fontFamily="@font/regular"-->
+                            <!--                    android:text="Get attached to reading books"-->
+                            <!--                    android:textColor="@color/white"-->
+                            <!--                    android:textSize="16sp" />-->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/learn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dark_grey_circle">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/baseline_language_24"/>
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_neue_bold"
+                                android:text="Learn new Language"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+
+                            <!--                <TextView-->
+                            <!--                    android:layout_width="wrap_content"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:layout_marginTop="5dp"-->
+                            <!--                    android:fontFamily="@font/regular"-->
+                            <!--                    android:text="Get attached to reading books"-->
+                            <!--                    android:textColor="@color/white"-->
+                            <!--                    android:textSize="16sp" />-->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RadioButton
+                        android:id="@+id/radiolanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/project"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dark_grey_circle">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/baseline_work_history_24" />
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_neue_bold"
+                                android:text="Start a project"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+
+                            <!--                <TextView-->
+                            <!--                    android:layout_width="wrap_content"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:layout_marginTop="5dp"-->
+                            <!--                    android:fontFamily="@font/regular"-->
+                            <!--                    android:text="Get attached to reading books"-->
+                            <!--                    android:textColor="@color/white"-->
+                            <!--                    android:textSize="16sp" />-->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RadioButton
+                        android:id="@+id/radioproject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/custom_clicked"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/blue_button"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Create custom"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+                <!--                <LinearLayout-->
+                <!--                    android:layout_marginStart="5dp"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <RelativeLayout-->
+                <!--                        android:layout_width="60dp"-->
+                <!--                        android:layout_height="60dp"-->
+                <!--                        android:background="@drawable/white_circle">-->
+
+                <!--                        <ImageView-->
+                <!--                            android:layout_width="40dp"-->
+                <!--                            android:layout_height="40dp"-->
+                <!--                            android:layout_centerInParent="true"-->
+                <!--                            android:src="@drawable/baseline_add_24"-->
+                <!--                            app:tint="@color/white" />-->
+
+
+                <!--                    </RelativeLayout>-->
+
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="center_vertical"-->
+                <!--                        android:layout_marginStart="15dp"-->
+                <!--                        android:layout_marginEnd="15dp"-->
+                <!--                        android:orientation="vertical">-->
+
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:fontFamily="@font/helvetica_neue_bold"-->
+                <!--                            android:text="Create custom"-->
+                <!--                            android:textColor="@color/white"-->
+                <!--                            android:textSize="16sp" />-->
+
+
+                <!--                        &lt;!&ndash;                <TextView&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                    android:layout_marginTop="5dp"&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                    android:fontFamily="@font/regular"&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                    android:text="Get attached to reading books"&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                    android:textSize="16sp" />&ndash;&gt;-->
+
+                <!--                    </LinearLayout>-->
+
+
+                <!--                </LinearLayout>-->
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/regular"
+                android:text="This is more of a challenge and we limit habits to three. We know more than three habits is not ideal for a start."
+                android:textColor="@color/colorGrey"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

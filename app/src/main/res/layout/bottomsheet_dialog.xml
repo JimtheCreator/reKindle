@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/newid"
+    android:background="@color/darkTheme"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorGrey"
+        android:layout_height="1.5dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutedito"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/initial_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background2"
+            android:hint="Name"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/new_item"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:padding="4dp"
+        android:background="@drawable/blue_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Done"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <!--                <LinearLayout-->
+        <!--                    android:layout_marginStart="5dp"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_centerVertical="true"-->
+        <!--                    android:orientation="horizontal">-->
+
+        <!--                    <RelativeLayout-->
+        <!--                        android:layout_width="60dp"-->
+        <!--                        android:layout_height="60dp"-->
+        <!--                        android:background="@drawable/white_circle">-->
+
+        <!--                        <ImageView-->
+        <!--                            android:layout_width="40dp"-->
+        <!--                            android:layout_height="40dp"-->
+        <!--                            android:layout_centerInParent="true"-->
+        <!--                            android:src="@drawable/baseline_add_24"-->
+        <!--                            app:tint="@color/white" />-->
+
+
+        <!--                    </RelativeLayout>-->
+
+
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_gravity="center_vertical"-->
+        <!--                        android:layout_marginStart="15dp"-->
+        <!--                        android:layout_marginEnd="15dp"-->
+        <!--                        android:orientation="vertical">-->
+
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:fontFamily="@font/helvetica_neue_bold"-->
+        <!--                            android:text="Create custom"-->
+        <!--                            android:textColor="@color/white"-->
+        <!--                            android:textSize="16sp" />-->
+
+
+        <!--                        &lt;!&ndash;                <TextView&ndash;&gt;-->
+        <!--                        &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--                        &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--                        &lt;!&ndash;                    android:layout_marginTop="5dp"&ndash;&gt;-->
+        <!--                        &lt;!&ndash;                    android:fontFamily="@font/regular"&ndash;&gt;-->
+        <!--                        &lt;!&ndash;                    android:text="Get attached to reading books"&ndash;&gt;-->
+        <!--                        &lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+        <!--                        &lt;!&ndash;                    android:textSize="16sp" />&ndash;&gt;-->
+
+        <!--                    </LinearLayout>-->
+
+
+        <!--                </LinearLayout>-->
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

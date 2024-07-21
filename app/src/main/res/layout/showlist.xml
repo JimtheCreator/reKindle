@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkTheme"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/custom_one"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tettete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lightitalic"
+            android:text="30 Day Challenge"
+            android:textColor="@color/colorGrey"
+            android:textSize="13sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tettete"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titletxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helvetica_neue_bold"
+                    android:textColor="@color/white"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/subT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageofitem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:wave="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:background="@color/darkTheme"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="150dp"-->
+    <!--        android:background="@drawable/arectangle_shape">-->
+
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/just"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="150dp"-->
+    <!--            android:background="@drawable/arectangle_shape"-->
+    <!--            android:orientation="vertical"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--            <com.john.waveview.WaveView-->
+    <!--                android:id="@+id/wave_view"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="150dp"-->
+    <!--                wave:above_wave_color="@color/newColor"-->
+    <!--                wave:blow_wave_color="@color/newColor"-->
+    <!--                wave:progress="20" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tettete"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="15dp"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:fontFamily="@font/lightitalic"-->
+    <!--                android:text="30 Day Challenge"-->
+    <!--                android:textColor="@color/colorGrey"-->
+    <!--                android:textSize="13sp" />-->
+
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/tettete"-->
+    <!--                android:layout_marginStart="15dp"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:layout_marginEnd="15dp"-->
+    <!--                android:orientation="horizontal">-->
+
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center_vertical"-->
+    <!--                    android:layout_marginEnd="20dp"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/titletxt"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/helvetica_neue_bold"-->
+    <!--                        android:textColor="@color/white"-->
+    <!--                        android:textSize="21sp" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/subT"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginTop="5dp"-->
+    <!--                        android:fontFamily="@font/regular"-->
+    <!--                        android:textColor="@color/white"-->
+    <!--                        android:textSize="13sp" />-->
+
+    <!--                </LinearLayout>-->
+
+
+    <!--            </LinearLayout>-->
+
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/imageofitem"-->
+    <!--                android:layout_width="60dp"-->
+    <!--                android:layout_height="60dp"-->
+    <!--                android:layout_alignParentEnd="true"-->
+    <!--                android:layout_alignParentBottom="true"-->
+    <!--                android:layout_gravity="center_vertical"-->
+    <!--                android:layout_marginEnd="15dp"-->
+    <!--                android:layout_marginBottom="10dp" />-->
+
+
+    <!--        </RelativeLayout>-->
+
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--</LinearLayout>-->

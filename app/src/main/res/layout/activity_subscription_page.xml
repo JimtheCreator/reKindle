@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="subscription.SubscriptionPageActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grey_circle">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/baseline_close_24"
+                    app:tint="@color/lightlightBlack" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/sanfrans__another_medium"
+                        android:gravity="center_horizontal"
+                        android:text="You're almost done"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/checkone"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/white_circle">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_check_24"
+                            app:tint="@color/black" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wueh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@+id/checkone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/sanfrans__another_medium"
+                            android:text="Create an account"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/light"
+                            android:text="You successfully created your account"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/abn"
+                        android:layout_width="5dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/checkone"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:background="@color/white" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/locked"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_below="@+id/abn"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/white_circle">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_lock_24"
+                            app:tint="@color/black" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/youtu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wueh"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_toEndOf="@+id/locked"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/sanfrans__another_medium"
+                            android:text="Day 1: Start your journey"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/light"
+                            android:text="@string/block_apps_focus_on_habits"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/kunja"
+                        android:layout_width="5dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/locked"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:background="#404040" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/ona"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_below="@+id/kunja"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/cool_black_circle">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/trophy"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/titlengori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/youtu"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="31dp"
+                        android:layout_toEndOf="@+id/ona"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/sanfrans__another_medium"
+                            android:text="Day 30: End of the journey"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/light"
+                            android:text="@string/total_focus_no_more_distractions"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+
+                    <!--            <View-->
+                    <!--                android:id="@+id/oomm"-->
+                    <!--                android:layout_width="5dp"-->
+                    <!--                android:layout_height="30dp"-->
+                    <!--                android:layout_below="@+id/ona"-->
+                    <!--                android:layout_centerVertical="true"-->
+                    <!--                android:layout_marginStart="14dp"-->
+                    <!--                android:background="#404040" />-->
+
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_below="@+id/titlengori"-->
+                    <!--                android:layout_gravity="center_vertical"-->
+                    <!--                android:layout_marginStart="16dp"-->
+                    <!--                android:layout_marginTop="10dp"-->
+                    <!--                android:layout_toEndOf="@+id/ona"-->
+                    <!--                android:orientation="vertical">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_gravity="center_vertical"-->
+                    <!--                    android:fontFamily="@font/sanfrans__another_medium"-->
+                    <!--                    android:text="After-math"-->
+                    <!--                    android:textColor="@color/white"-->
+                    <!--                    android:textSize="15sp"-->
+                    <!--                    android:textStyle="bold" />-->
+
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_gravity="center_vertical"-->
+                    <!--                    android:fontFamily="@font/light"-->
+                    <!--                    android:text="@string/coming_soon_unleash_productivity_with_our_new_feature_easily_jot_down_tasks_and_track_events_in_a_sleek_calendar_view_get_ready_for_seamless_organization"-->
+                    <!--                    android:textColor="@color/thickGrey"-->
+                    <!--                    android:textSize="12sp" />-->
+
+
+                    <!--            </LinearLayout>-->
+
+                </RelativeLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:fontFamily="@font/sanfrans_medium"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/bulleted_list"/>-->
+
+
+<!--                </LinearLayout>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/sanfrans__another_medium"
+                            android:text="@string/coming_soon"
+                            android:textColor="@color/thickGrey"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sanfrans_regular"
+                            android:text="@string/coming_soon_unleash_productivity_with_our_new_feature_easily_jot_down_tasks_and_track_events_in_a_sleek_calendar_view_get_ready_for_seamless_organization"
+                            android:textColor="@color/thickGrey"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/light_blackonly"
+        android:fitsSystemWindows="true"
+        android:overScrollMode="never"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/yearly_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/stateselected">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/regular"
+                            android:text="Yearly"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/regular"
+                            android:text="£23.88"
+                            android:textColor="@color/colorGrey" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:fontFamily="@font/regular"
+                            android:gravity="end"
+                            android:text="only £1.99/month"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:fontFamily="@font/regular"
+                            android:text="No Free Trial"
+                            android:textColor="@color/colorGrey" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="65dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/white_background">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/sanfrans__another_medium"
+                        android:text="50% OFF"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/monthly_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/fade_white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/regular"
+                        android:text="Monthly"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/regular"
+                            android:text="@string/strike_text"
+                            android:textColor="@color/colorGrey" />
+
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/regular"
+                            android:text="Discount"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:fontFamily="@font/regular"
+                        android:gravity="end"
+                        android:text="only £2.99/month"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:fontFamily="@font/regular"
+                        android:text="No Free Trial"
+                        android:textColor="@color/colorGrey" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/register_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/overridegreen_background">
+
+                <TextView
+                    android:id="@+id/txtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sanfrans_bold"
+                    android:text="Continue"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/sanfrans_regular"
+                android:text="No commitment - Cancel anytime!"
+                android:textColor="@color/thickGrey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

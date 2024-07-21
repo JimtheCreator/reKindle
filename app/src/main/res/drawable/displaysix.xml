@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape
+            android:innerRadiusRatio="3"
+            android:thicknessRatio="26"
+            android:useLevel="false">
+
+            <solid android:color="@color/uniqueColor" />
+
+
+            <corners
+                android:radius="20dp"
+                />
+
+        </shape>
+
+    </item>
+
+    <item>
+        <clip>
+
+            <shape
+                android:shape="rectangle"
+                android:useLevel="true"
+                android:innerRadiusRatio="3">
+
+                <solid android:color="@color/newlyaddedcolor1" />
+
+                <corners
+                    android:radius="26dp" />
+
+            </shape>
+
+        </clip>
+
+    </item>
+
+</layer-list>

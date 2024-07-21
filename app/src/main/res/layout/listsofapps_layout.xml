@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coooo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/invicibleColor"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/lskdde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/invicibleColor"
+        android:orientation="vertical">
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="140dp"-->
+        <!--            android:layout_marginTop="25dp"-->
+        <!--            android:background="@drawable/drawable_shape"-->
+        <!--            android:elevation="10dp"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            &lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+        <!--            &lt;!&ndash;                android:layout_alignParentTop="true"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                android:layout_marginTop="10dp"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                android:layout_marginStart="10dp"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                android:elevation="10dp"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                android:orientation="horizontal">&ndash;&gt;-->
+
+        <!--            &lt;!&ndash;                <ImageView&ndash;&gt;-->
+        <!--            &lt;!&ndash;                    android:id="@+id/appIcon"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                    android:layout_width="55dp"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                    android:layout_height="55dp"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                    android:layout_gravity="center_vertical"&ndash;&gt;-->
+        <!--            &lt;!&ndash;                    android:src="@drawable/baseline_cyclone_24" />&ndash;&gt;-->
+
+
+        <!--            &lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentEnd="true"-->
+        <!--                android:layout_alignParentBottom="true"-->
+        <!--                android:layout_marginStart="5dp"-->
+        <!--                android:layout_marginBottom="5dp"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <androidx.appcompat.widget.SwitchCompat-->
+        <!--                    android:id="@+id/switchCompat"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_gravity="center_vertical"-->
+        <!--                    android:layout_marginEnd="10dp"-->
+        <!--                    android:textSize="11sp"-->
+        <!--                    android:thumb="@drawable/statechecked"-->
+        <!--                    app:showText="false"-->
+        <!--                    app:track="@drawable/track" />-->
+
+        <!--                &lt;!&ndash;                <TextView&ndash;&gt;-->
+        <!--                &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--                &lt;!&ndash;                    android:text="OFF"&ndash;&gt;-->
+        <!--                &lt;!&ndash;                    android:textSize="12sp"&ndash;&gt;-->
+        <!--                &lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+        <!--                &lt;!&ndash;                    android:layout_gravity="center_vertical"&ndash;&gt;-->
+        <!--                &lt;!&ndash;                    android:textStyle="bold"&ndash;&gt;-->
+        <!--                &lt;!&ndash;                    android:fontFamily="@font/regular"&ndash;&gt;-->
+        <!--                &lt;!&ndash;                    />&ndash;&gt;-->
+
+        <!--            </LinearLayout>-->
+
+
+        <!--        </RelativeLayout>-->
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="end|end"
+            android:layout_marginStart="10dp"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/det"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp">
+
+
+                        <ImageView
+                            android:id="@+id/appIcon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_cyclone_24" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/maincontainer"
+                        android:background="@drawable/borderstroke"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="55dp"
+                        android:src="@drawable/baseline_check_circle_24"
+                        android:visibility="gone"
+                        app:tint="@color/lightGreen" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/semibold"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/semibold"
+                    android:text="Remove"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

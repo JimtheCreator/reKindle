@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="app">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="BOOT_WITH_SNAPSHOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\LENOVO\.android\avd\Pixel_4_XL_API_30.avd" />
+                </Key>
+              </deviceKey>
+              <snapshotKey value="C:\Users\LENOVO\.android\avd\Pixel_4_XL_API_30.avd\snapshots\snap_2023-12-24_16-01-39" />
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-01-21T00:17:35.344272200Z" />
+          <targetsSelectedWithDialog>
+            <Target>
+              <type value="BOOT_WITH_SNAPSHOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\LENOVO\.android\avd\Pixel_4_XL_API_30.avd" />
+                </Key>
+              </deviceKey>
+              <snapshotKey value="C:\Users\LENOVO\.android\avd\Pixel_4_XL_API_30.avd\snapshots\snap_2023-12-20_22-17-16" />
+            </Target>
+          </targetsSelectedWithDialog>
+        </State>
+      </entry>
+    </value>
+  </component>
+</project>

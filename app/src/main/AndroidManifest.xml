@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- <uses-permission android:name="android.permission.GET_TASKS"/> -->
+
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <uses-permission
+        android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- Add the FOREGROUND_SERVICE permission -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PuryPal"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/transparent_logo"/>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/lightGreen"/>
+
+        <activity
+            android:name="front_page.OpenSourceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name="front_page.SecondSubActivity"
+            android:exported="false" />
+        <activity
+            android:name="front_page.InterveneLaunchActivity"
+            android:exported="false" />
+        <activity
+            android:name="windowactivities.DropdownShadeActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="devydev.mirror.net.dropdown" />
+        <activity
+            android:name="windowactivities.WaterActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="devydev.mirror.net.waterlike" />
+        <activity
+            android:name="windowactivities.WindowActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="devydev.mirror.net.blocktask" />
+        <activity
+            android:name="front_page.AppSparedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="front_page.SpareTimeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+
+            <!-- &lt;!&ndash; Hide the status bar &ndash;&gt; -->
+            <!-- <meta-data -->
+            <!-- android:name="android.windowLayoutInDisplayCutoutMode" -->
+            <!-- android:value="shortEdges" /> -->
+
+        </activity>
+        <activity
+            android:name="subscription.SubscriptionPageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="receivers.HabitReminderReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="your.package.name.ACTION_REMINDER" />
+                <!-- Add other necessary actions if any -->
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="receivers.BroadcastBootLoader"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+
+            <intent-filter>
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="notification.FCMService"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:enabled="true"
+            android:name="service.DelayService"
+            android:exported="true"
+            />
+
+        <service
+            android:name="service.AppBlockingService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="dataSync"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:usesCleartextTraffic="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <activity
+            android:name="front_page.BlockedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="front_page.KillerSwitchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="front_page.AlarmClockActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="front_page.BooksActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="front_page.JournalActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="front_page.DetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name="front_page.HomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HabitSetActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

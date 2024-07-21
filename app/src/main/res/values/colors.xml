@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blackTransparent">#CC000000</color>
+    <color name="lightTransparent">#80FFFFFF</color>
+    <color name="black">#010101</color>
+    <color name="blue">#FF2979FF</color>
+    <color name="matteblack">#242124</color>
+    <color name="thickpink">#b30d0d</color>
+    <color name="newlyaddedcolor1">#D2EDFC</color>
+    <color name="purpleembrace">#D10CFD</color>
+    <color name="newlyaddedcolor2">#287CF6</color>
+
+    <color name="newColor">#E6CDAE</color>
+    <color name="colorGrey">#CBCBCB</color>
+
+    <color name="colorOrange">#FFFF9800</color>
+    <color name="lightOrange">#FFA500</color>
+
+    <color name="red">#F0F40432</color>
+    <color name="boldred">#170808</color>
+
+    <color name="abitboldred">#271A1A</color>
+    <color name="thickGrey">#808080</color>
+    <color name="lightBlack">#242526</color>
+    <color name="lightlightBlack">#1F1F21</color>
+    <color name="invicibleColor">#00000000</color>
+    <color name="fadedgreen">#1B2719</color>
+
+    ♀<color name="thickRed">#FF782727</color>
+    <color name="uniqueColor">#182828</color>
+
+
+    <color name="lightblue">#ADD8E6</color>
+
+    <color name="foreignColor">#132020</color>
+
+    <color name="anotherForeign">#1c2f2f</color>
+
+    <color name="dimmed_green">#25D366</color>
+
+    <color name="testcolor">#38ed2e</color>
+
+    <color name="darkTheme">#121212</color>
+
+    <!--   Original LightGreen #00FA9A-->
+    <color name="lightGreen">#25D366</color>
+    <color name="thickGreen">#006400</color>
+
+    <color name="colorPurple">#800080</color>
+
+    <color name="offwhite">#F5F5F5</color>
+</resources>

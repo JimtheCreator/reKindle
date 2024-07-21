@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/invicibleColor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lightcorners"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bookname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/helvetica_neue_bold"
+                        android:gravity="top"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/mm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/light"
+                            android:text="Currently on:"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_toEndOf="@+id/mm"
+                            android:layout_marginStart="5dp"
+                            android:id="@+id/currentpage"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/helvetica_neue_bold"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:background="@drawable/book_cover">
+
+                <TextView
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="9sp"
+                    android:fontFamily="@font/lightitalic"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/viee"
+                    android:layout_height="wrap_content"
+                    android:text="Psychology of money"/>
+                
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/viee"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/black"
+                    android:layout_width="50dp"
+                    android:layout_height="3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/abcz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/helvetica_neue_bold"
+                        android:gravity="center_horizontal"
+                        android:text="MY"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/helvetica_neue_bold"
+                        android:gravity="center_horizontal"
+                        android:text="BOOK"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/helvetica_neue_bold"
+                        android:gravity="center_horizontal"
+                        android:text="COVER"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/abcz"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/black"
+                    android:layout_width="50dp"
+                    android:layout_height="3dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/moredetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/thickGrey"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/done_forD"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ninetycorners"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/helvetica_neue_bold"
+            android:text="Done for today"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/book_cover"-->
+    <!--            android:layout_width="120dp"-->
+    <!--            android:layout_height="120dp"-->
+    <!--            android:src="@drawable/book_layout" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:layout_marginStart="15dp"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/bookname"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:fontFamily="@font/helvetica_neue_bold"-->
+    <!--                android:gravity="top"-->
+    <!--                android:text="Psychology of Money"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="17sp" />-->
+
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                android:fontFamily="@font/light"-->
+    <!--                android:text="Currently on"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="13sp" />-->
+
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:orientation="horizontal"-->
+    <!--                    android:layout_centerVertical="true"-->
+    <!--                    android:layout_marginEnd="5dp"-->
+    <!--                    android:layout_alignParentStart="true"-->
+    <!--                    android:layout_toStartOf="@+id/abc"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content">-->
+
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/ee"-->
+    <!--                        android:text="Page"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:textSize="15sp"-->
+    <!--                        android:fontFamily="@font/helvetica_neue_bold"-->
+    <!--                        android:textColor="@color/white"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        />-->
+
+    <!--                    <RelativeLayout-->
+    <!--                        android:id="@+id/gonga"-->
+    <!--                        android:layout_marginStart="2.5dp"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:textColor="@color/black" >-->
+
+    <!--&lt;!&ndash;                        <EditText&ndash;&gt;-->
+    <!--&lt;!&ndash;                            android:id="@+id/currentpage"&ndash;&gt;-->
+    <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                            android:layout_height="30dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                            android:background="@color/invicibleColor"&ndash;&gt;-->
+    <!--&lt;!&ndash;                            android:fontFamily="@font/helvetica_neue_bold"&ndash;&gt;-->
+    <!--&lt;!&ndash;                            android:inputType="number"&ndash;&gt;-->
+    <!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+    <!--&lt;!&ndash;                            android:textSize="16sp" />&ndash;&gt;-->
+
+
+    <!--                        <TextView-->
+    <!--                            android:id="@+id/currentpage"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:textSize="15sp"-->
+    <!--                            android:fontFamily="@font/helvetica_neue_bold"-->
+    <!--                            android:textColor="@color/white"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            />-->
+
+    <!--                    </RelativeLayout>-->
+
+
+    <!--                </LinearLayout>-->
+
+
+    <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--                    android:layout_alignParentEnd="true"-->
+    <!--                    android:id="@+id/abc"-->
+    <!--                    android:layout_width="90dp"-->
+    <!--                    android:layout_centerVertical="true"-->
+    <!--                    android:layout_height="wrap_content">-->
+
+    <!--                    <RelativeLayout-->
+    <!--                        android:id="@+id/minus"-->
+    <!--                        android:layout_width="0dp"-->
+    <!--                        android:layout_height="30dp"-->
+    <!--                        android:background="@drawable/boxone"-->
+    <!--                        android:orientation="vertical"-->
+    <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                        app:layout_constraintEnd_toStartOf="@+id/add"-->
+    <!--                        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                        app:layout_constraintStart_toStartOf="parent"-->
+    <!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_centerInParent="true"-->
+    <!--                            android:text="-"-->
+    <!--                            android:textColor="@color/white"-->
+    <!--                            android:textSize="20sp" />-->
+
+
+    <!--                    </RelativeLayout>-->
+
+
+    <!--                    <RelativeLayout-->
+    <!--                        android:id="@+id/add"-->
+    <!--                        android:layout_width="0dp"-->
+    <!--                        android:layout_height="30dp"-->
+    <!--                        android:layout_marginStart="10dp"-->
+    <!--                        android:background="@drawable/boxtwo"-->
+    <!--                        android:orientation="vertical"-->
+    <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                        app:layout_constraintStart_toEndOf="@+id/minus"-->
+    <!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_centerInParent="true"-->
+    <!--                            android:text="+"-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            android:textColor="@color/white"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"/>-->
+
+    <!--                    </RelativeLayout>-->
+
+    <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--            </RelativeLayout>-->
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/moredetail"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:fontFamily="@font/regular"-->
+    <!--            android:text= "Pyschology of Money has 200 pages. Reading 10 pages everyday will help you complete it. One day at a time. Happy Reading :)"-->
+    <!--            android:textColor="@color/thickGrey"-->
+    <!--            android:textSize="13sp" />-->
+
+    <!--    </LinearLayout>-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:id="@+id/done_forD"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:background="@drawable/ninetycorners"-->
+    <!--        android:padding="4dp">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:text="Done for today"-->
+    <!--            android:fontFamily="@font/helvetica_neue_bold"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="15sp" />-->
+
+
+    <!--    </RelativeLayout>-->
+
+
+</LinearLayout>

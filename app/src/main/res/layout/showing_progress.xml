@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="3.5dp"
+    android:orientation="horizontal"
+    android:background="@color/darkTheme"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/mainsetup"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/nnn"
+        android:minWidth="10dp"
+        android:minHeight="10dp"
+        android:layout_alignParentStart="true"
+        android:progress="50"
+        android:progressDrawable="@drawable/vertical_progressbar"
+        app:trackCornerRadius="20dp" />
+
+
+    <TextView
+        android:id="@+id/nnn"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="90%"
+        android:textSize="17sp"
+        android:fontFamily="@font/sourcesanspro_bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_g"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/invicibleColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounded"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#333333" />
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sanfrans__semibold"
+            android:text="Where did you stop?"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/fortoday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sanfrans__semibold"
+            android:text="Done for today"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/comeback"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sanfrans_regular"
+            android:text="Come back tomorrow"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/daily_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sanfrans_regular"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrainone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:cs_circle_color="#333333"
+                app:cs_circle_fill="#1D1D1D"
+                app:cs_circle_progress_color="@color/lightGreen"
+                app:cs_circle_stroke_width="20dp"
+                app:cs_circle_style="round"
+                app:cs_circle_x_radius="0dp"
+                app:cs_circle_y_radius="0dp"
+                app:cs_disable_pointer="false"
+                app:cs_disable_progress_glow="true"
+                app:cs_hide_progress_when_empty="false"
+                app:cs_lock_enabled="true"
+                app:cs_maintain_equal_circle="true"
+                app:cs_max="242"
+                app:cs_move_outside_circle="true"
+                app:cs_negative_enabled="false"
+                app:cs_pointer_alpha_ontouch="30"
+                app:cs_pointer_angle="360"
+                app:cs_pointer_color="@color/lightGreen"
+                app:cs_pointer_halo_color="@color/lightGreen"
+                app:cs_pointer_halo_color_ontouch="@color/lightGreen"
+                app:cs_pointer_halo_width="5dp"
+                app:cs_pointer_stroke_width="30dp"
+                app:cs_progress="50"
+                app:cs_use_custom_radii="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/holdermama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/seekbar"
+                app:layout_constraintEnd_toEndOf="@+id/seekbar"
+                app:layout_constraintStart_toStartOf="@+id/seekbar"
+                app:layout_constraintTop_toTopOf="@+id/seekbar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sanfrans_regular"
+                    android:text="Page"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/seektext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sanfrans_bold"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/complete_img"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:src="@drawable/baseline_check_24"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/seekbar"
+                app:layout_constraintEnd_toEndOf="@+id/seekbar"
+                app:layout_constraintStart_toStartOf="@+id/seekbar"
+                app:layout_constraintTop_toTopOf="@+id/seekbar"
+                app:tint="@color/lightGreen" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/actual_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sanfrans_bold"
+            android:textColor="@color/invicibleColor"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/bookcheck"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/green_background">
+
+
+                <TextView
+                    android:id="@+id/state_clicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sanfrans_regular"
+                    android:text="Complete"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/doneclick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/green_background"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sanfrans_regular"
+                    android:text="Done"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cancel_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/invicibleColor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sanfrans_regular"
+                    android:text="Cancel"
+                    android:textColor="@color/lightGreen"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
