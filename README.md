@@ -42,8 +42,7 @@ Embrace the journey of intentional living, where each tracked habit becomes a ca
 We welcome contributions from the community! If you have ideas, bug reports, or code improvements, feel free to open an issue or submit a pull request. Together, we can make reKindle even better.
 
 ## Download Now
-Reclaim your time, establish positive habits, and embrace a healthier digital lifestyle with reKindle. Download now and embark on a 30-day journey toward digital well-being. Your path to balance begins here.
-FIND THE APK FILE UNDER RELEASE FOLDER.
+app/release/rekindle.apk
 ---
 
 Thank you for choosing reKindle. We are excited to support you on your journey to digital wellness. If you have any questions or feedback, feel free to reach out to us. Happy rekindling!
